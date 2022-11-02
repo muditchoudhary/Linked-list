@@ -30,6 +30,7 @@ const LinkedList = () => {
 		if (listSize === 0) {
 			myNode = Node(value);
 			tail = myNode;
+			previousNode = myNode;
 		} else {
 			myNode = Node(value, head);
 		}
@@ -216,21 +217,21 @@ const LinkedList = () => {
 const myLinkedList = LinkedList();
 
 // Adding initial values with append
-myLinkedList.append(5);
-myLinkedList.append(6);
-myLinkedList.append(7);
+// myLinkedList.append(5);
+// myLinkedList.append(6);
+// myLinkedList.append(7);
 // myLinkedList.append(10);
 // myLinkedList.append(12);
 
 // Trying prepend method
-myLinkedList.prepend(4);
+// myLinkedList.prepend(4);
 
 // Trying append and prepend both together
 // myLinkedList.append(15);
-myLinkedList.prepend(2);
+// myLinkedList.prepend(2);
 
 // Printing the list
-myLinkedList.toString();
+// myLinkedList.toString();
 
 // Printing head and tail
 // console.log(myLinkedList.showHead());
@@ -275,6 +276,5 @@ myLinkedList.toString();
 // myLinkedList.removeAt(1);
 // myLinkedList.toString();
 
-
-console.log(myLinkedList.showHead());
-console.log(myLinkedList.showTail());
+// console.log(myLinkedList.showHead());
+// console.log(myLinkedList.showTail());
